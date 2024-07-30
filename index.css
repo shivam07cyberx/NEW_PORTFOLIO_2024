@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(112,219,210,0.3904412106639531) 30%, rgba(211,212,198,1) 100%); */
+border-color: black;
+background-color: rgb(0, 0, 0);
+}
+.logoimg{
+    border-radius: 55%;
+    border: 1px solid black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+header .logo {
+    font-size: 1.5em;
+  color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #ad33c0;
+    transition: .06s;
+}
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    /* background-color: #f4f4f4; */
+    color: rgb(255, 255, 255);
+}
+.section{
+    margin-top: -75px;
+}
+.home-left {
+    text-align: left;
+    max-width: 50%;
+    /* margin-top: 60px; */
+}
+.web{
+    font-weight: bolder;
+    color: #ad33c0;
+}
+.web:hover{
+   color: white;
+    transition: 0.6s;
+}
+.home-left h1 {
+    /* margin: 10px 0; */
+    margin-top: 60px;
+}
+.hello{
+    font-size: 50px;
+    color: #ad33c0;
+}
+
+.home-right {
+    max-width: 40%;
+    text-align: center;
+}
+.pro-color{
+    color: #ad33c0 ;
+}
+.profile-img {
+    width: 100%;
+    height: 50%;
+    max-width: 200px;
+    border-radius: 10%;
+    border: 2px solid  #ad33c0 ;
+    box-shadow: 0px 0px 10px 2px white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 50%;
+}
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 5px white;
+}
+.abour-color{
+    color:  #ad33c0;
+}
+.contact-col{
+    color:  #ad33c0;   
+}
+#about{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    border-radius: 5px;
+}
+.project img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+} 
+.proimg1{
+   
+    /* box-shadow: 0px 5px 5px 2px rgb(209, 42, 209); */
+    transform: scale(1.1); /* Slightly zoomed in by default */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: zoom-out;
+}
+.proimg1:hover {
+    transform: scale(1); /* Zoom out effect on hover */
+    /* box-shadow: 0px 0px 5px 5px white;  */
+}
+.pb{
+
+    background-color:#e219d2;
+    height: 40px;
+    width: auto;
+   
+    border-radius: 10px;
+   font-style: var(#e219d2);
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+}
+.pb:hover{
+    background-color:#78f1f7;
+    color:#333;
+    transition: .6s;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+}
+
+form button {
+    padding: 10px;
+    background-color: #e219d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    text-align: center;
+   
+    
+}
+.contact-info p a{
+    text-decoration: none;
+    color: #0400f6;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid black;
+    animation: typing 3s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+.conlogo{
+ color: white;
+ display: flex;
+ gap: 30px;
+ justify-content: center;
+ margin-bottom: 20px;
+ text-align: center;
+ align-items: center;
+ margin-top: -20px;
+ 
+}
+.git img{
+    border-radius: 50%;
+}
+.linkd img{
+    border-radius: 50%;
+}
+.insta img{
+    border-radius: 50%;
+}
+.fac img{
+    border-radius: 50%;
+}
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
